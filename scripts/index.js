@@ -1,9 +1,25 @@
 let targetDate = new Date('Jan 18, 2025 00:00:00').getTime();
 
-function mostrarPortaRetrato() {
-  var portaRetrato = document.getElementById('porta-retrato');
-  portaRetrato.style.display = 'grid'; // Exibe o porta-retrato
-}
+// Seleciona o botão de surpresa
+const surpriseButton = document.getElementById('surprise-button');
+
+// Adiciona um evento de clique ao botão
+surpriseButton.addEventListener('click', () => {
+  // Esconde as outras seções
+  const container = document.getElementById('container');
+  const birthdayCard = document.querySelector('.birthdayCard');
+  const textfy = document.querySelector('.text-fy');
+  const button = document.getElementById('surprise-button');
+
+  container.style.display = 'none';
+  birthdayCard.style.display = 'none';
+  textfy.style.display = 'none';
+  button.style.display = 'none';
+
+  // Mostra o porta-retrato
+  const portaRetrato = document.querySelector('.porta-retrato');
+  portaRetrato.style.display = 'flex'; // Torna o porta-retrato visível
+});
 
 const second = 1000,
   minute = second * 60,
@@ -19,7 +35,7 @@ function updateCountdown() {
     const container = document.getElementById('container');
     const birthdayCard = document.querySelector('.birthdayCard');
     const textfy = document.querySelector('.text-fy');
-    const surpriseButton = document.getElementById('surprise-button');
+    const button = document.getElementById('surprise-button');
 
     container.classList.add('hide');
 
@@ -29,7 +45,7 @@ function updateCountdown() {
       birthdayCard.style.display = 'block'; // Torna o cartão visível
       birthdayCard.classList.add('show'); // Adiciona a animação de entrada
       textfy.style.display = 'block';
-      // surpriseButton.style.display = 'block';
+      button.style.display = 'block';
     }, 500); // Duração da animação (igual ao CSS)
 
     // 3. Para o intervalo
