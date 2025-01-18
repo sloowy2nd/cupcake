@@ -1,36 +1,98 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Feliz Aniversário!!!</title>
-
-  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
-  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
-  <link rel="stylesheet" href="styles/style.css" media="all">
-</head>
-
-<body>
-  <canvas id=c></canvas>
-  <div class="container" id="count">
-    <h1 id="head">Contagem regressiva para o niver da princesa:</h1>
-    <ul>
-      <li><span id="day"></span>dias</li>
-      <li><span id="hour"></span>horas</li>
-      <li><span id="minute"></span>minutos</li>
-      <li><span id="second"></span>segundos</li>
-    </ul>
-  </div>
-  <div id="merrywrap" class="merrywrap">
-    <canvas id="snowfall"></canvas>
-    <div class="giftbox">
-      <div class="cover">
-        <div></div>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniversário da Princesa</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/birthday-card.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="surprise">
+        <button id="surprise-button" onclick="mostrarPortaRetrato()">
+          Surpresa
+        </button>
+        <audio>
+          <!--autoplay loop-->
+          <source src="assets/audios/daylily.mp3" type="audio/mp3" />
+        </audio>
       </div>
-      <div class="box"></div>
-    </div>
-</body>
-<script src="scripts/index.js" charset="utf-8"></script>
 
+      <div class="birthdayy">
+        <div id="container">
+          <h1>Contagem regressiva para o níver da princesa</h1>
+
+          <ul id="countdown">
+            <li><span id="days"></span>dias</li>
+            <li><span id="hours"></span>horas</li>
+            <li><span id="minutes"></span>minutos</li>
+            <li><span id="seconds"></span>segundos</li>
+          </ul>
+        </div>
+
+        <div class="birthdayCard">
+          <div class="cardFront">
+            <h3 class="happy">FELIZ ANIVERSÁRIO</h3>
+            <div class="balloons">
+              <div class="balloon-1"></div>
+              <div class="balloon-2"></div>
+              <div class="balloon-3"></div>
+              <div class="balloon-4"></div>
+              <div class="balloon-5"></div>
+              <div class="balloon-6"></div>
+            </div>
+          </div>
+          <div class="cardInside">
+            <h3 class="back">FELIZ ANIVERSÁRIO</h3>
+            <p>Feliz Aniversário, minha princesa!,</p>
+            <p>
+              Eu te amo demais, espero que esteja bem e tenha um dia maravilhoso
+              <3
+            </p>
+            <p class="name">Ever</p>
+          </div>
+        </div>
+
+        <div class="text-fy">
+          <p>
+            Hoje é o dia de celebrar você, essa pessoa incrível que deixa a
+            minha vida tão mais bonita.
+            <br /><br />
+            Você sabe o quanto eu amo tudo em você, né? Seus olhinhos tão
+            lindos, seu rostinho delicado e seu cabelinho cheio de charme....
+            São só parte do quão linda você é. Tudo em você é especial, único e
+            belo.
+            <br /><br />
+            Eu só quero te desejar tudo de melhor nesse novo ano da sua vida.
+            Que você consiga realizar todos os seus sonhos e desejos, que nunca
+            falte amor(não vai faltar comigo aqui), saúde e felicidade. Você
+            merece tudo isso e muito mais, porque você é uma pessoa maravilhosa,
+            cheia de luz e bondade.
+            <br /><br />
+            Espero estar por perto por muito muito muito mais tempo,
+            compartilhando momentos, sorrisos e conquistas com você. Você é
+            muito importante pra mim, e eu sou muito grato por fazer parte da
+            sua vida.
+            <br /><br />
+            Aproveita muito o seu dia, viu minha doce cupcake? Você merece todas
+            as coisas lindas do mundo. 🎂🎉
+            <br /><br />
+            Com todo o carinho,
+            <br />
+            De alguém que te admira e te quer muito bem, Ever. 💖
+          </p>
+        </div>
+      </div>
+      <div class="porta-retrato">
+        <h2 class="titulo">Minhas Fotos Favoritas</h2>
+        <img class="imagem" src="assets/photos/1.jpg" alt="Foto 1" />
+        <img class="imagem" src="assets/photos/2.jpg" alt="Foto 2" />
+        <img class="imagem" src="assets/photos/3.png" alt="Foto 3" />
+        <img class="imagem" src="assets/photos/4.png" alt="Foto 4" />
+      </div>
+    </div>
+  </body>
+
+  <script src="scripts/index.js"></script>
 </html>
