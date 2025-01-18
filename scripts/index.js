@@ -1,4 +1,4 @@
-let targetDate = new Date('Jan 17, 2025 00:00:00').getTime();
+let targetDate = new Date('Jan 18, 2025 00:00:00').getTime();
 
 function mostrarPortaRetrato() {
   var portaRetrato = document.getElementById('porta-retrato');
