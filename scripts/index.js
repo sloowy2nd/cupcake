@@ -45,7 +45,6 @@ function updateCountdown() {
       birthdayCard.style.display = 'block'; // Torna o cartão visível
       birthdayCard.classList.add('show'); // Adiciona a animação de entrada
       textfy.style.display = 'block';
-      button.style.display = 'block';
     }, 500); // Duração da animação (igual ao CSS)
 
     // 3. Para o intervalo
